@@ -13,16 +13,20 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+     TextView name = findViewById(R.id.textView2);
+        TextView age = findViewById(R.id.textView5);
+
+
 
         TextView ruslt1= findViewById(R.id.num1);
         TextView ruslt2= findViewById(R.id.num2);
 
         Bundle b = getIntent().getExtras();
         String rus= b.getString("name" );
-        String rus2 = b.getString("age");
+        int rus2 = b.getInt("age");
 
-        ruslt1.setText(rus);
-        ruslt2.setText(rus2);
+        ruslt1.setText(String.valueOf(rus2));
+        ruslt2.setText(rus);
 
 
 

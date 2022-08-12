@@ -26,15 +26,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String name = num1.getText().toString();
-                String age  =num2.getText().toString();
+                int age  =Integer.parseInt(num2.getText().toString());
 
                 Intent i = new Intent(MainActivity.this,MainActivity2.class );
                 i.putExtra("name",name);
-                i.putExtra("age",name);
-
-                
-
-
+                i.putExtra("age",age);
               startActivity (i);
 
             }
