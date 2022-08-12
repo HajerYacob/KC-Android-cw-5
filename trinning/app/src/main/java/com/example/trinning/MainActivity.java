@@ -25,6 +25,15 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
+                if (num1.getText().toString().equals("")){
+                }
+                else if (num2.getText().toString().equals("")){
+                }
+
+
+
                 String name = num1.getText().toString();
                 int age  =Integer.parseInt(num2.getText().toString());
 
